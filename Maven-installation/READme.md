@@ -35,6 +35,15 @@ sudo unzip apache-maven-3.9.0-bin.zip
 sudo rm -rf apache-maven-3.9.0-bin.zip
 sudo mv apache-maven-3.9.0/ maven
 ```
+maven-install.sh  
+  sudo yum install wget unzip -y 
+  sudo yum install openjdk1.18  
+  cd /opt   
+  sudo wget https://dlcdn.apache.org/maven/maven-4/4.0.0-alpha-4/binaries/apache-maven-4.0.0-alpha-4-bin.zip
+  unzip apache-maven-4.0.0-alpha-4-bin.zip
+  mv apache-maven-4.0.0-alpha-4-bin.zip/ maven/ 
+  chmod -R 777 maven  
+
 ## .#Step3) Set Environmental Variable  - For Specific User eg ec2-user
 ``` sh
 vi ~/.bash_profile  # and add the lines below
